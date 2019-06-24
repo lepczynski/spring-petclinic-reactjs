@@ -1,21 +1,29 @@
-# React Frontend for Spring Boot PetClinic demo
-[![Build Status](https://travis-ci.org/spring-petclinic/spring-petclinic-reactjs.svg?branch=master)](https://travis-ci.org/spring-petclinic/spring-petclinic-reactjs)
+Hello good soul!
 
-This project is a port of the [Spring (Boot) PetClinic demo](https://github.com/spring-projects/spring-petclinic) with a frontend built using [ReactJS](https://facebook.github.io/react/) and
-[TypeScript](https://www.typescriptlang.org/). 
+This repo is a fok of https://github.com/spring-petclinic/spring-petclinic-reactjs.
+I created it just to be able to learn Spring in more depth and to remember working with such mix break of over half a year at the moment of writing this.
 
-I have tried to make as few modifications to the backend code as necessary to the [spring-boot branch](https://github.com/spring-projects/spring-petclinic/tree/springboot) of the original sample project.
-Mainly I've added the new package `org.springframework.samples.petclinic.web.api`
-that contains the REST Api that is used by the React frontend. In this package most of the classes are taken 
-from the [angularjs version](https://github.com/spring-projects/spring-petclinic/tree/angularjs) of the demo.
+I'm putting this up in hope that it might help someone traveling up the same path as me.
+That is to understand setting up a Spring Boot+Hibernate+React App.
 
-## Related projects
+As I believe in learning by doing.
 
-Note there is another Spring PetClinic example that uses React: [spring-petclinic-graphql](https://github.com/spring-petclinic/spring-petclinic-graphql). Beside React that example uses **GraphQL** for API queries instead of the REST API.
+I also believe that doing something that you're passionate about.
 
-## Contribution
+One of my biggest DIY interests is programming MCU's and
 
-If you like to help and contribute (there's lot root for improvements! I've collected a list of ideas [here: TODO.md](TODO.md)) you're more than welcome! Please open an issue or contact me on [Twitter](https://twitter.com/nilshartmann) so we can discuss together!
+IoT'izing lights at my flat in Warsaw (esp8266 + C++; platformio with OTA by CI/CD but It's in the process of dockerizing)
+
+and recently my refrigerator on Wemos D1 mini in Micro Python (I'll try to put this up on GH as well)
+
+
+This repo is a fork of 
+https://github.com/spring-petclinic/spring-petclinic-reactjs
+that I I'll try to maintain as time allows.
+
+Soon I also hope to start sharing my technical knowledge that I am storing in form of a tree of hyperlinks, a vast mind-map ranging from mathematics through Micro Python to Java and Spring and beyond.
+
+I hope to start a blog sharing stuff I learn (recently a few thoughts on ".dotfiles")
 
 
 ## Install and run
@@ -42,68 +50,10 @@ After starting the server you can install and run the client from the `client` f
 
 ## Feedback
 
-In case you have any comments, questions, bugs, enhancements feel free to open an issue in this repository.
-If you you want to follow me on twitter, my handle is [@nilshartmann](https://twitter.com/nilshartmann).
- 
+In case you have any comments, please feel free to open an issue in this repository.
+If you want to contact me, please do so at lepi at hackerspace.pl : )
 ------
- 
-# From the original sample README file:
 
-## Understanding the Spring Petclinic application with a few diagrams
-<a href="https://speakerdeck.com/michaelisvy/spring-petclinic-sample-application">See the presentation here</a>
-
-
-## Running petclinic locally
-```
-	git clone https://github.com/spring-projects/spring-petclinic.git
-	cd spring-petclinic
-	git checkout springboot
-	./mvnw spring-boot:run
-```
-
-You can then access petclinic here: http://localhost:8080/
-
-## In case you find a bug/suggested improvement for Spring Petclinic
-Our issue tracker is available here: https://github.com/spring-projects/spring-petclinic/issues
-
-
-## Database configuration
-
-In its default configuration, Petclinic uses an in-memory database (HSQLDB) which
-gets populated at startup with data. A similar setup is provided for MySql in case a persistent database configuration is needed.
-Note that whenever the database type is changed, the data-access.properties file needs to be updated and the mysql-connector-java artifact from the pom.xml needs to be uncommented.
-
-You may start a MySql database with docker:
-
-```
-docker run -e MYSQL_ROOT_PASSWORD=petclinic -e MYSQL_DATABASE=petclinic -p 3306:3306 mysql:5.7.8
-```
-
-## Working with Petclinic in Eclipse/STS
-
-### prerequisites
-The following items should be installed in your system:
-* Maven 3 (http://www.sonatype.com/books/mvnref-book/reference/installation.html)
-* git command line tool (https://help.github.com/articles/set-up-git)
-* Eclipse with the m2e plugin (m2e is installed by default when using the STS (http://www.springsource.org/sts) distribution of Eclipse)
-
-Note: when m2e is available, there is an m2 icon in Help -> About dialog.
-If m2e is not there, just follow the install process here: http://eclipse.org/m2e/download/
-
-
-### Steps:
-
-1) In the command line
-```
-git clone https://github.com/spring-projects/spring-petclinic.git
-```
-2) Inside Eclipse
-```
-File -> Import -> Maven -> Existing Maven project
-```
-
-
-## Looking for something in particular?
 
 <table>
   <tr>
