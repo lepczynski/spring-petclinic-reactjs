@@ -26,12 +26,12 @@ export default ({name}: { name: string }) => (
 
           <MenuItem active={name.startsWith('/owners')} url='/owners/list' title='find owners'>
             <span className='glyphicon glyphicon-search' aria-hidden='true'></span>&nbsp;
-                    <span>Find nodes</span>
+                    <span>Find owners</span>
           </MenuItem>
 
           <MenuItem active={name === 'vets'} url='/vets' title='veterinarians'>
             <span className='glyphicon glyphicon-th-list' aria-hidden='true'></span>&nbsp;
-                    <span>Projects</span>
+                    <span>Veterinarians</span>
           </MenuItem>
 
           <MenuItem active={name === 'error'} url='/error'
